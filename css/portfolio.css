@@ -66,7 +66,6 @@ h1, h2, h3, h4, h5, h6, p{
 
 
 /* Шапка */
-
 .main-nav{
     display: flex;
     align-items: center;
@@ -129,6 +128,28 @@ h1, h2, h3, h4, h5, h6, p{
     margin-left: 30px;    
 }
 
+.icon-envelope{
+    width: 16px;
+    height: 12px;
+    margin-right: 8px;
+    fill: currentColor;
+}
+
+.item.envelope:hover .icon-envelope{
+    fill: var(--hover-color);
+}
+
+
+.icon-phone{
+    width: 10px;
+    height: 15px;
+    margin-right: 8px;
+    fill: currentColor;
+}
+
+.item.phone:hover .icon-phone{
+    fill: var(--hover-color);
+}
 
 .contacts-nav .link{
     display: block;
@@ -147,7 +168,6 @@ h1, h2, h3, h4, h5, h6, p{
 .contacts-nav a:focus{
     color: var(--hover-color);
 }
-
 
 /* Портфолио */
 .portfolio{
@@ -175,6 +195,7 @@ h1, h2, h3, h4, h5, h6, p{
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
+    border: 0px;
     
     font-weight: 500;
     font-size: 16px;
@@ -204,6 +225,8 @@ h1, h2, h3, h4, h5, h6, p{
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     padding-bottom: 20px;
+
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 
 }
 
@@ -266,8 +289,6 @@ h1, h2, h3, h4, h5, h6, p{
     color: var(--background-primary);
     background-color: var(--hover-color);
 }
-
-/* Подвал */
 
 .footer {
     background-color: var(--footer-background-site);
@@ -339,16 +360,28 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .social-links .item:not(:last-child){
-    margin-right: 25px;
+    margin-right: 10px;
 }
 
-.social-links a{
+.social-links .item{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
     background-color: #43444D ;
-    padding: 6px;
 }
 
-.social-links a:hover,
-.social-links a:focus{
+.social-links .social-icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--background-primary);
+}
+
+.social-links .item:hover,
+.social-links .item:focus{
     background-color: var(--hover-color);
 }
 
@@ -359,6 +392,10 @@ h1, h2, h3, h4, h5, h6, p{
 .subscribe-form{
     display: flex;
     margin-top: 21px;
+}
+
+.subscribe-icon{
+    margin-left: 10px;
 }
 
 .email-form{
@@ -381,6 +418,8 @@ h1, h2, h3, h4, h5, h6, p{
     min-width: 200px;
     margin-left: 12px;
     border-radius: 4px;
+    padding: 0;
+    border: none;
     
     font-weight: 900;
     font-size: 16px;

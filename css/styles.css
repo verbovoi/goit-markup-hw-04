@@ -14,6 +14,7 @@
      --background-secondary: #F5F4FA;
      --footer-background-site: #2F303A;
      --hover-color: #2196F3;
+     --social-link-color: #AFB1B8;
  }
  
  *,
@@ -239,8 +240,9 @@ h1, h2, h3, h4, h5, h6, p{
     background-color: var(--background-secondary);
 }
 
-.item-image:hover{
-    background-color: var(--hover-color); 
+.item-image .icon{
+    width: 70px;
+    height: 70px;
 }
 
 .features-list .item + .item{
@@ -339,6 +341,7 @@ h1, h2, h3, h4, h5, h6, p{
     padding-bottom: 24px;
 
     background-color: var(--background-primary);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .people-team .item + .item{
@@ -370,11 +373,30 @@ h1, h2, h3, h4, h5, h6, p{
 
 .people-team .social-link{
     margin-top: 30px;
-    /* margin-bottom: 24px; */
 }
 
-.social-link>a + a{
+/* .social-link>a + a{
     margin-left: 40px;
+} */
+
+.social-link>a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--social-link-color);
+}
+
+.team a:hover .social-icon,
+.team a:focus .social-icon{
+    fill: var(--background-primary);
 }
 
 .team a:hover,
@@ -417,13 +439,18 @@ h1, h2, h3, h4, h5, h6, p{
     margin-right: 30px;
 }
 
-.clients a{
-    font-size: 50px;
+.company-icon{
+    fill: var(--social-link-color);
 }
 
-.clients a:hover,
-.clients a:focus{
-    background-color: var(--hover-color);
+.clients .item:hover .company-icon,
+.clients .item:focus .company-icon{ 
+    fill: var(--hover-color);
+}
+
+.clients .item:hover,
+.clients .item:focus{
+    border: 1px solid var(--hover-color);
 }
 
 /* Подвал */
@@ -456,6 +483,12 @@ h1, h2, h3, h4, h5, h6, p{
     letter-spacing: 0.03em;
 
     color: var(--background-primary);
+}
+
+.social-icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--social-link-color);
 }
 
 .contact-info a{
@@ -498,16 +531,26 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .social-links .item:not(:last-child){
-    margin-right: 25px;
+    margin-right: 10px;
 }
 
-.social-links a{
+.social-links .item{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
     background-color: #43444D ;
-    padding: 6px;
 }
 
-.social-links a:hover,
-.social-links a:focus{
+.social-links .social-icon{
+    fill: var(--background-primary);
+}
+
+.social-links .item:hover,
+.social-links .item:focus{
     background-color: var(--hover-color);
 }
 
@@ -518,6 +561,10 @@ h1, h2, h3, h4, h5, h6, p{
 .subscribe-form{
     display: flex;
     margin-top: 21px;
+}
+
+.subscribe-icon{
+    margin-left: 10px;
 }
 
 .email-form{
@@ -540,6 +587,8 @@ h1, h2, h3, h4, h5, h6, p{
     min-width: 200px;
     margin-left: 12px;
     border-radius: 4px;
+    padding: 0;
+    border: none;
     
     font-weight: 900;
     font-size: 16px;
