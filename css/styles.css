@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6, p{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 .list{
@@ -153,7 +153,8 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .contacts-nav .link{
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
         
@@ -255,6 +256,7 @@ h1, h2, h3, h4, h5, h6, p{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 
     color: var(--secondary-text-color);
 }

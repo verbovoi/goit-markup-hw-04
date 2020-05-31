@@ -29,7 +29,6 @@ body{
    background-color: var(--background-site);
     color: var(--primary-text-color);
 
-
 }
 
 ul {
@@ -54,7 +53,7 @@ h1, h2, h3, h4, h5, h6, p{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 .list{
@@ -152,7 +151,8 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .contacts-nav .link{
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
         
@@ -173,6 +173,8 @@ h1, h2, h3, h4, h5, h6, p{
 .portfolio{
     padding-top: 93px;
     padding-bottom: 94px;
+    border-top: 1px solid #ECECEC;
+
 }
 
 
@@ -226,8 +228,6 @@ h1, h2, h3, h4, h5, h6, p{
     border-bottom-left-radius: 5px;
     padding-bottom: 20px;
 
-    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-
 }
 
 .project img{
@@ -241,6 +241,11 @@ h1, h2, h3, h4, h5, h6, p{
     width: 370px;
 
     /* border: 1px solid #EEEEEE; */
+}
+
+.project .item:hover{
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+
 }
 
 .project .item:nth-child(3n){
